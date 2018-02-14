@@ -41,7 +41,6 @@ public class JawScript : MonoBehaviour {
 			}
 		} else {			
 			if (loudness > 0) {
-				Debug.Log("Lower Mouth Loud");
 				if (transform.position.y > (origPos-centerLineY)*2) {
 					transform.Translate (new Vector3 (0.0f, loudness * Time.deltaTime * -1, 0.0f));
 				}
